@@ -1,0 +1,153 @@
+[33mcommit d736fe62d416078ac9f7c8268e2a2c223271a330[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 7734e99 54dc795
+Author: water <707420152@qq.com>
+Date:   Wed Feb 14 18:16:58 2024 +0800
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       .idea/mybatisx/templates.xml
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/controller/FireDataController.java
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/controller/FireFacilityController.java
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/serivce/impl/FireDataServiceImpl.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/aop/AuthInterceptor.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/controller/AdminController.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/model/dto/admin/UserRoleAddRequest.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/model/dto/admin/UserRoleDeleteRequest.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/service/AdminService.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/service/PermissionService.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/service/impl/AdminServiceImpl.java
+    #       rbac-core/src/main/java/com/aqua/rbaccore/service/impl/PermissionServiceImpl.java
+
+[33mcommit 7734e9990078c5b7414810745db3b70276aa0c9a[m
+Author: water <707420152@qq.com>
+Date:   Wed Feb 14 18:14:43 2024 +0800
+
+    完成了很多bug的修改
+
+[33mcommit 0fe25825df313920b875816f7202cb0e152e100c[m
+Author: water <707420152@qq.com>
+Date:   Tue Feb 13 00:55:46 2024 +0800
+
+    完成了很多bug的修改
+
+[33mcommit 54dc795be668c27b30678a4bee2fa1162030fd7b[m
+Author: water <707420152@qq.com>
+Date:   Tue Feb 13 00:55:46 2024 +0800
+
+    完成了管理员给用户分配角色,给角色分配权限的Controller的编写.
+
+[33mcommit ca15582588ab14ae5afabc169af72245a0bdfbe0[m
+Merge: b05f658 edf8a5a
+Author: water <707420152@qq.com>
+Date:   Mon Feb 12 00:10:48 2024 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit b05f65889118ac37a4d0e90b6f9ce80c3377226a[m
+Author: water <707420152@qq.com>
+Date:   Mon Feb 12 00:10:13 2024 +0800
+
+    完成了监管角色的需求,新增了出警记录表,以及对应的Controller方法
+
+[33mcommit edf8a5af1663efa32dffedffc07f43293a510d5a[m
+Author: Water_King <82157130+watergogogo@users.noreply.github.com>
+Date:   Sun Feb 11 02:34:40 2024 +0800
+
+    Update SMSUtils.java
+    
+    修改阿里云秘钥
+
+[33mcommit b88ff992b5c4028b16220615013d374710040a4c[m
+Author: water <707420152@qq.com>
+Date:   Sun Feb 11 02:21:18 2024 +0800
+
+    完成了管理员角色,维保单位角色(差一个接收报警信息功能),企业角色,用户角色需求的后端代码的编写.
+
+[33mcommit 8a862a2e3aafeb140849d4c7f274f20c79bd70fb[m
+Author: water <707420152@qq.com>
+Date:   Sun Feb 11 02:19:21 2024 +0800
+
+    完成了管理员角色,维保单位角色(差一个接收报警信息功能),企业角色,用户角色需求的后端代码的编写.
+
+[33mcommit 959aaf707199119c4de5e0e355c7a3e5acbc6c92[m
+Merge: 0eea588 d9c7597
+Author: water <707420152@qq.com>
+Date:   Sun Feb 11 02:19:11 2024 +0800
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/controller/AnalysisController.java
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/controller/FireFacilityController.java
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/controller/FireMaintenanceController.java
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/mapper/FireMaintenanceMapper.java
+    #       rbac-business/src/main/java/com/aqua/rbacbusiness/model/vo/DataInfoVO.java
+    #       rbac-business/src/main/resources/mapper/FireMaintenanceMapper.xml
+
+[33mcommit 0eea588465858f80fc1541247fc8b656ae1eb2d5[m
+Author: water <707420152@qq.com>
+Date:   Sun Feb 11 02:10:47 2024 +0800
+
+    完成了管理员角色,维保单位角色(差一个接收报警信息功能),企业角色,用户角色需求的后端代码的编写.
+
+[33mcommit a01f2d2a636bcfea88e08058826f91a455eb03bc[m
+Author: water <707420152@qq.com>
+Date:   Fri Feb 9 00:00:21 2024 +0800
+
+    完成了管理员角色,维保单位角色(差一个接收报警信息功能),企业角色,用户角色需求的后端代码的编写.
+
+[33mcommit d9c7597d3cc115fbb190e14b131501df6da260e5[m
+Author: water <707420152@qq.com>
+Date:   Fri Feb 9 00:00:21 2024 +0800
+
+    完成了消防设备日常维护记录业务部分的controller编写,以及fire_maintenance数据表sql的编写
+
+[33mcommit 581ef2ca605c2f188cf791a6c71499dbe8317acc[m
+Author: water <707420152@qq.com>
+Date:   Thu Feb 8 21:11:14 2024 +0800
+
+    完成了消防数据业务部分的controller编写,以及消防报警数据表sql的编写
+
+[33mcommit 5637675324eecf078e5e7980f4f4c00ce2094ef9[m
+Author: water <707420152@qq.com>
+Date:   Thu Feb 8 12:12:12 2024 +0800
+
+    完成了消防设备业务部分的controller编写
+
+[33mcommit a8f3dd85ca8be0895ad88e3c479cb8a8d74b6d7f[m
+Author: water <707420152@qq.com>
+Date:   Wed Feb 7 15:02:30 2024 +0800
+
+    完成了角色和权限部分的controller编写
+
+[33mcommit 1c2806ad1b7f06a9daa0004612e6dce3b65f6463[m
+Author: water <707420152@qq.com>
+Date:   Tue Feb 6 23:45:55 2024 +0800
+
+    完成了userServiceImpl的编写,修改了Bean类自动生成的小错误
+
+[33mcommit 72930143c291819cb2d76a8f3b56f2a6e9150971[m
+Author: water <707420152@qq.com>
+Date:   Tue Feb 6 23:38:35 2024 +0800
+
+    完成了userServiceImpl的编写,修改了Bean类自动生成的小错误
+
+[33mcommit bec458fefb136936c7b587344a9ff6c3a529a4c3[m
+Author: water <707420152@qq.com>
+Date:   Tue Feb 6 23:37:56 2024 +0800
+
+    完成了userServiceImpl的编写,修改了Bean类自动生成的小错误
+
+[33mcommit 0a9f1eb68fa1be91dbed0a588c32c13b84acf040[m
+Author: water <707420152@qq.com>
+Date:   Tue Feb 6 23:34:22 2024 +0800
+
+    完成了userServiceImpl的编写,修改了Bean类自动生成的小错误
+
+[33mcommit 7714a090a0ab32889d54c904f04c5a5641bea113[m
+Author: water <707420152@qq.com>
+Date:   Tue Feb 6 21:57:32 2024 +0800
+
+    first commit
+    完成了项目的初始化,UserController的编写.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aqua.rbacbusiness.mapper.FireDataMapper">
+
+    <resultMap id="BaseResultMap" type="com.aqua.rbacbusiness.model.entity.FireData">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="temperature" column="temperature" jdbcType="FLOAT"/>
+            <result property="humidity" column="humidity" jdbcType="FLOAT"/>
+            <result property="smokeConcentration" column="smokeConcentration" jdbcType="FLOAT"/>
+            <result property="gasConcentration" column="gasConcentration" jdbcType="FLOAT"/>
+            <result property="illumination" column="illumination" jdbcType="INTEGER"/>
+            <result property="deviceStatus" column="deviceStatus" jdbcType="VARCHAR"/>
+            <result property="deviceId" column="deviceId" jdbcType="BIGINT"/>
+            <result property="batteryLever" column="batteryLever" jdbcType="INTEGER"/>
+            <result property="connectionStatus" column="connectionStatus" jdbcType="INTEGER"/>
+            <result property="alarmType" column="alarmType" jdbcType="VARCHAR"/>
+            <result property="alarmTime" column="alarmTime" jdbcType="TIMESTAMP"/>
+            <result property="alarmLocation" column="alarmLocation" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,temperature,humidity,
+        smokeConcentration,gasConcentration,illumination,
+        deviceStatus,deviceId,batteryLever,
+        connectionStatus,alarmType,alarmTime,
+        alarmLocation
+    </sql>
+</mapper>

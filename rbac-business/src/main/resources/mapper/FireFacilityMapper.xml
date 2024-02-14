@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aqua.rbacbusiness.mapper.FireFacilityMapper">
+
+    <resultMap id="BaseResultMap" type="com.aqua.rbacbusiness.model.entity.FireFacility">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="facilityName" column="facilityName" jdbcType="VARCHAR"/>
+            <result property="location" column="location" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="manufacturer" column="manufacturer" jdbcType="VARCHAR"/>
+            <result property="model" column="model" jdbcType="VARCHAR"/>
+            <result property="capacity" column="capacity" jdbcType="INTEGER"/>
+            <result property="installationdate" column="installationDate" jdbcType="TIMESTAMP"/>
+            <result property="lastinspectiondate" column="lastInspectionDate" jdbcType="TIMESTAMP"/>
+            <result property="isActive" column="isActive" jdbcType="TINYINT"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,facilityName,location,
+        type,manufacturer,model,
+        capacity,installationDate,lastInspectionDate,
+        isActive,createTime,updateTime,
+        isDelete
+    </sql>
+    <select id="getFacilityCount" resultType="java.lang.Long">
+        SELECT COUNT(*)
+        FROM fire_facility
+        WHERE deviceId NOT IN (
+            SELECT deviceId
+            FROM fire_maintenance
+            WHERE lastMaintenance >= #{startDate}
+        )
+    </select>
+    <select id="getIsActive" resultType="java.lang.Long">
+        select isActive
+        from fire_facility
+        where fire_facility.id = #{id}
+    </select>
+</mapper>

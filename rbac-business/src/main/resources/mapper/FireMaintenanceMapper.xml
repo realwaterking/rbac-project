@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aqua.rbacbusiness.mapper.FireMaintenanceMapper">
+
+    <resultMap id="BaseResultMap" type="com.aqua.rbacbusiness.model.entity.FireMaintenance">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="deviceId" column="deviceId" jdbcType="BIGINT"/>
+            <result property="maintenanceType" column="maintenanceType" jdbcType="VARCHAR"/>
+            <result property="maintenanceDesc" column="maintenanceDesc" jdbcType="VARCHAR"/>
+            <result property="maintenancePerson" column="maintenancePerson" jdbcType="VARCHAR"/>
+            <result property="maintenanceResult" column="maintenanceResult" jdbcType="VARCHAR"/>
+            <result property="maintenanceDate" column="maintenanceDate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,deviceId,maintenanceType,
+        maintenanceDesc,maintenancePerson,maintenanceResult,
+        maintenanceDate
+    </sql>
+    <select id="getMaintenanceCount" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM fire_maintenance
+        WHERE maintenanceDate >= #{startDate}
+    </select>
+    <select id="getFireMaintenanceById" resultType="java.lang.String">
+        select maintenancePerson
+        from fire_maintenance
+        where fire_maintenance.deviceId = #{id}
+    </select>
+    <select id="getFireMaintenanceDate" resultType="java.lang.String">
+        select maintenanceDate
+        from fire_maintenance
+        where fire_maintenance.deviceId = #{id}
+    </select>
+</mapper>
